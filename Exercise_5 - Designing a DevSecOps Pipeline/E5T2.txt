@@ -1,0 +1,42 @@
+1. Identify tools that will allow you to do the following:
+2. For each tool - identify an example compliance violation or vulnerability which it might expose.
+
+	a.  Scan infrastructure as code templates:
+
+		- terrascan: https://github.com/cesar-rodriguez/terrascan
+
+                - Regula: https://github.com/fugue/regula
+
+	   # Example vulnerability
+
+		- terrascan: Ingress open to 0.0.0.0/0.
+		
+		- Regula: IAM policies with full "*:*" administrative privileges.
+
+
+	b. Scan AMI’s or containers for OS vulnerabilities:
+		
+		- Clair: https://github.com/quay/clair
+		
+		- Dagda: https://github.com/eliasgranderubio/dagda/ 
+
+	   # Example vulnerability
+		
+		- CVE: https://cve.mitre.org/
+
+		- NVD: https://nvd.nist.gov/
+
+
+	c. Scan an AWS environment for cloud configuration vulnerabilities:
+		
+		- AWS Config 
+
+		- AWStealth: https://github.com/cyberark/SkyArk/tree/master/AWStealth
+	    
+	  # Example vulnerability
+		
+		- MFA Not enabled for all users.
+		
+		- S3 bucket server side encryption not enabled.
+		
+		

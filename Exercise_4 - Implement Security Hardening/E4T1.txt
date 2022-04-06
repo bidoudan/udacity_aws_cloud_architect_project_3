@@ -1,0 +1,13 @@
+# Identify 2-3 changes that can be made to our environment to prevent an SSH brute force attack from the internet.
+
+	1- Remove and Avoid using PasswordAuthentication (ssh) to instance.
+
+	2- Using AWS Systems Manager's Session Manager service to access the server instance.
+
+	3- Restrict IPs addresses by using CIDR block or exact ip address.
+
+# Neither instance should have had access to the secret recipes bucket; even in the instance that API credentials were compromised how could we have prevented access to sensitive data?
+
+	1- Least priveliged access (using IAM roles).
+	
+	2- Make use of Server side encryption.

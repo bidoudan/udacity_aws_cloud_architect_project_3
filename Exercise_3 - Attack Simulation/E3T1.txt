@@ -1,0 +1,9 @@
+1- UnauthorizedAccess:EC2/SSHBruteForce
+
+An EC2 instance has been involved in SSH brute force attacks. (i-0947c8d208b560a15 against i-0e3b8adda6c015004).
+
+2- From Guarduty Docummentation: "Amazon GuardDuty is a continuous security monitoring service that analyzes and processes the
+following data sources: VPC Flow Logs, AWS CloudTrail event logs, and DNS logs"
+
+The VPC Flow logs will show a large amount of requests sent from the one instance to a specific IP indicating that the instance is being used for an SSH brute force attack.
+

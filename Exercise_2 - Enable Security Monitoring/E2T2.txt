@@ -1,0 +1,9 @@
+Recommendations on how to remediate the vulnerabilities.
+
+- Restrict undesirable ip addresses by providing specific CIDR in security group for Inbound/Outbound (Ingress/Egress) traffics instead of using 0.0.0.0/0.
+
+- Encrypt EC2 volumes.
+
+- Encrypt S3 Buckets.
+
+- Enable VPC Flow logging.

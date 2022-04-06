@@ -1,0 +1,10 @@
+# Least Privileges Violation Vulnerability
+InstanceRole (IAM Role) has full access to any s3 bucket.
+This role should only have access to specific buckets and allow only necessary actions.
+
+# SSH Vulnerability
+Server instance has PasswordAuthentication enabled making it vulnerable for brute force attack...
+
+# Network Controls Vulnerability
+Security Groups configured to accept any (Egress and Ingress) network traffic (for/to any ip address).
+
